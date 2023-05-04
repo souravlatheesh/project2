@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name = {{ user.Name }} <br>
+    Age = {{ user.Age }} <br>
+    Place = {{ user.Place }} <br>
+    Phone = {{ user.Phone }} <br>
+    Email = {{ user.Email }} <br>
+    <a href="{% url 'update' user.id %}">Update</a>
+    <a href="{% url 'changepassword' user.id %}">ChangePassword</a>
+</body>
+</html>
